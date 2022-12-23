@@ -11,26 +11,26 @@ $(document).ready(function() {
 
 function showHomePage() {
     $('body').append(' \
-        <div class="page flex flex-col items-center h-screen p-2 sm:p-4"> \
+        <div class="page flex flex-col items-center h-screen p-4"> \
             <h1 class="my-4 2xl:my-16 text-6xl sm:text-7xl 2xl:text-8xl text-center">Tennis score</h1> \
             <div class="home-page w-full"> \
                 <div class="flex flex-col w-full items-center my-2 2xl:my-4"> \
-                    <span class="w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 my-4 text-3xl 2xl:text-4xl">Player 1</span> \
-                    <div class="flex w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 text-lg sm:text-2xl 2xl:text-3xl"> \
+                    <span class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 my-4 text-3xl 2xl:text-4xl">Player 1</span> \
+                    <div class="flex w-full md:w-2/3 lg:w-1/2 xl:w-1/3 text-lg sm:text-2xl 2xl:text-3xl"> \
                         <input type="text" id="player1" class="w-4/5 h-14 p-4 2xl:p-7 bg-inherit border-2 border-solid focus:outline-none" placeholder="Insert player name" autocomplete="off"> \
                         <button class="serve-option w-1/5 mx-4 2xl:mx-8 border-2 border-solid focus:outline-none">Serve</button> \
                     </div> \
                 </div> \
                 <div class="flex flex-col w-full items-center my-2 2xl:my-4"> \
-                    <span class="w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 my-4 text-3xl 2xl:text-4xl">Player 2</span> \
-                    <div class="flex w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 text-lg sm:text-2xl 2xl:text-3xl"> \
+                    <span class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 my-4 text-3xl 2xl:text-4xl">Player 2</span> \
+                    <div class="flex w-full md:w-2/3 lg:w-1/2 xl:w-1/3 text-lg sm:text-2xl 2xl:text-3xl"> \
                         <input type="text" id="player2" class="w-4/5 h-14 p-4 2xl:p-7 bg-inherit border-2 border-solid focus:outline-none" placeholder="Insert player name" autocomplete="off"> \
                         <button class="serve-option w-1/5 mx-4 2xl:mx-8 border-2 border-solid focus:outline-none">Serve</button> \
                     </div> \
                 </div> \
                 <div class="flex flex-col w-full items-center my-2 2xl:my-4"> \
-                    <span class="w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 my-4 text-3xl 2xl:text-4xl">Best of</span> \
-                    <div class="flex w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 text-lg sm:text-2xl 2xl:text-3xl"> \
+                    <span class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 my-4 text-3xl 2xl:text-4xl">Best of</span> \
+                    <div class="flex w-full md:w-2/3 lg:w-1/2 xl:w-1/3 text-lg sm:text-2xl 2xl:text-3xl"> \
                         <button class="bestOf-option w-14 h-14 border-2 border-solid focus:outline-none">3</button> \
                         <button class="bestOf-option w-14 h-14 mx-6 border-2 border-solid focus:outline-none">5</button> \
                     </div> \
@@ -73,24 +73,24 @@ function showHomePage() {
 
 function showScorePage() {
     $('body').append(' \
-        <div class="page flex flex-col items-center h-screen p-2 sm:p-4"> \
+        <div class="page flex flex-col items-center h-screen p-1 sm:p-4"> \
             <h1 class="my-4 2xl:my-16 text-6xl sm:text-7xl 2xl:text-8xl text-center">Tennis score</h1> \
             <div class="score-page w-full"> \
                 <div class="flex w-full justify-around sm:justify-center items-center my-6"> \
-                    <span class="serve-option text-sm xl:text-3xl 2xl:text-5xl mx-2">•</span> \
-                    <span class="player-name w-2/5 lg:w-1/2 xl:w-1/3 my-4 text-sm xl:text-3xl 2xl:text-5xl"></span> \
+                    <span class="serve-option text-lg xl:text-3xl 2xl:text-5xl mx-2">•</span> \
+                    <span class="player-name w-1/3 lg:w-1/2 xl:w-1/3 my-4 text-lg xl:text-3xl 2xl:text-5xl break-all"></span> \
                     <div class="player1-games-container"><span class="player1-games text-xl xl:text-3xl 2xl:text-5xl mx-1 sm:mx-8"></span></div> \
                     <span class="player-points-line text-xl xl:text-3xl 2xl:text-5xl mx-1 sm:mx-8">|</span> \
                     <span class="player1-points text-center w-6 xl:w-8 2xl:w-14 text-xl xl:text-3xl 2xl:text-5xl mx-1 sm:mx-4"></span> \
-                    <button class="add-points-button w-8 h-8 sm:w-14 sm:h-14 mx-1 text-sm xl:text-3xl 2xl:text-5xl border-2 border-solid focus:outline-none">+</button> \
+                    <button class="add-points-button w-8 h-8 sm:w-14 sm:h-14 mx-1 text-lg xl:text-3xl 2xl:text-5xl border-2 border-solid focus:outline-none">+</button> \
                 </div> \
                 <div class="flex w-full justify-around sm:justify-center items-center my-6"> \
-                    <span class="serve-option text-sm xl:text-3xl 2xl:text-5xl mx-2">•</span> \
-                    <span class="player-name w-2/5 lg:w-1/2 xl:w-1/3 my-4 text-sm xl:text-3xl 2xl:text-5xl"></span> \
+                    <span class="serve-option text-lg xl:text-3xl 2xl:text-5xl mx-2">•</span> \
+                    <span class="player-name w-1/3 lg:w-1/2 xl:w-1/3 my-4 text-lg xl:text-3xl 2xl:text-5xl break-all"></span> \
                     <div class="player2-games-container"><span class="player2-games text-xl xl:text-3xl 2xl:text-5xl mx-1 sm:mx-8"></span></div> \
                     <span class="player-points-line text-xl xl:text-3xl 2xl:text-5xl mx-1 sm:mx-8">|</span> \
                     <span class="player2-points text-center w-6 xl:w-8 2xl:w-14 text-xl xl:text-3xl 2xl:text-5xl mx-1 sm:mx-4"></span> \
-                    <button class="add-points-button w-8 h-8 sm:w-14 sm:h-14 mx-1 text-sm xl:text-3xl 2xl:text-5xl border-2 border-solid focus:outline-none">+</button> \
+                    <button class="add-points-button w-8 h-8 sm:w-14 sm:h-14 mx-1 text-lg xl:text-3xl 2xl:text-5xl border-2 border-solid focus:outline-none">+</button> \
                 </div> \
             </div> \
         </div> \
