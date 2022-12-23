@@ -1,0 +1,19 @@
+* {
+    font-family: 'Heebo-ExtraLight';
+}
+
+body {
+    background-color: #F7F7F7;
+    color: #393E46;
+}
+
+input, button {
+    border-color: #EEEEEE;
+}
+
+button:hover, .selected {
+    border-color: #393E46;
+    background-color: #393E46;
+    color: #F7F7F7;
+    transition: .4s;
+}
